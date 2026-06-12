@@ -25,3 +25,5 @@ A Stream pipeline consists of three phases:
 <!-- Section Revision: 2026-09-11 14:40:18 -->
 
 <!-- Section Revision: 2026-10-07 11:12:40 -->
+
+<!-- Topic Section Update: 2026-06-12 09:49:22 -->
