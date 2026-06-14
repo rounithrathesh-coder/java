@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: In-Place Singly Linked List Reversal Algorithm
- * Revision: #66 | Date: 2026-08-21 09:01:49
+ * Summer Revision: #21 | Date: 2026-06-14 14:44:41
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class SinglyLinkedListReversal {
