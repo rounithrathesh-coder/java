@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Maximum Subarray Linear Dynamic Programming (Kadane)
- * Revision: #209 | Date: 2026-10-19 22:20:42
+ * Summer Revision: #38 | Date: 2026-06-19 15:04:27
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class KadanesMaxSubarray {
