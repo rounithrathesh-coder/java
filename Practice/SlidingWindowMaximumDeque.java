@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Monotonic Decreasing Deque for Sliding Window Maximum
- * Revision: #205 | Date: 2026-10-18 22:32:36
+ * Summer Revision: #66 | Date: 2026-07-04 08:05:19
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 import java.util.*;
