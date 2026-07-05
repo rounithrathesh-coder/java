@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Custom Checked Exception Hierarchy and Propagation
- * Revision: #200 | Date: 2026-10-16 20:23:02
+ * Summer Revision: #69 | Date: 2026-07-05 15:22:47
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class CustomCheckedExceptionDemo {
