@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Consistent Override of Equals, HashCode, and ToString
- * Revision: #29 | Date: 2026-06-29 09:29:36
+ * Revision: #32 | Date: 2026-07-05 15:33:09
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 import java.util.Objects;
