@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Dynamic Resizable Array with Capacity Doubling
- * Summer Revision: #14 | Date: 2026-06-10 20:30:16
+ * Summer Revision: #87 | Date: 2026-07-12 17:46:05
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class CustomArrayList {
