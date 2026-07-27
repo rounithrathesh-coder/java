@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: In-Place Lomuto Partitioning Quick Sort
- * Revision: #120 | Date: 2026-09-16 22:22:30
+ * Summer Revision: #117 | Date: 2026-07-27 16:57:03
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class QuickSortAlgorithm {
