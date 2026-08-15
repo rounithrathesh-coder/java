@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Classical 0/1 Knapsack Dynamic Programming with Memoization
- * Summer Revision: #72 | Date: 2026-07-08 14:41:55
+ * Summer Revision: #160 | Date: 2026-08-15 20:35:25
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class Knapsack01DP {
