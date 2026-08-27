@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Linear Time O(1) Space Trapping Rain Water
- * Summer Revision: #98 | Date: 2026-07-19 14:07:50
+ * Summer Revision: #191 | Date: 2026-08-27 10:01:33
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 public class TrappingRainWaterTwoPointer {
