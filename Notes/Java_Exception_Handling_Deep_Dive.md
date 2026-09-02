@@ -1,0 +1,18 @@
+# Java Exception Handling Architecture
+
+## Hierarchy
+```
+Throwable
+ ├── Error (Unrecoverable JVM issues: OutOfMemoryError, StackOverflowError)
+ └── Exception
+      ├── RuntimeException (Unchecked: NullPointerException, IndexOutOfBoundsException)
+      └── Checked Exceptions (Must be declared or handled: IOException, SQLException)
+```
+
+## Best Practices
+1. **Never catch `Throwable` or `Error`**: JVM-level errors should terminate the process cleanly.
+2. **Always preserve root cause**: Use `new CustomException("message", originalCause)`.
+3. **Prefer try-with-resources**: Prevents socket/file descriptor leaks.
+
+
+<!-- Authored: 2026-09-02 08:20:17 -->
