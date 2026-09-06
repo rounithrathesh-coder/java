@@ -1,6 +1,6 @@
 /**
  * Practice Implementation: Usage of Predicate, Consumer, Function, Supplier
- * Revision: #18 | Date: 2026-06-21 11:32:49
+ * Revision: #96 | Date: 2026-09-06 20:08:34
  * Author: Rounith Rathesh <rounithrathesh@gmail.com>
  */
 import java.util.function.*;
