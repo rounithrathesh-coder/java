@@ -1,6 +1,7 @@
 # ☕ Daily Java Practice & System Design
 
 [![Daily Java Code Push](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml/badge.svg)](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Java: 17+](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
 
 Welcome to my daily Java coding journey! This repository features daily code implementations, algorithm solutions, system design patterns, and multithreading exercises.
@@ -16,9 +17,9 @@ This repository automatically receives daily code challenges and solutions via *
 git clone https://github.com/rounithrathesh-coder/java.git
 cd java
 
-# Compile and run today's challenge
+# Compile and run any challenge
 javac daily/Day001_LRU_Cache.java
-java -cp daily Day001_LRU_Cache
+java daily.Day001_LRU_Cache
 ```
 
 ---
@@ -27,7 +28,7 @@ java -cp daily Day001_LRU_Cache
 
 | File | Topic | Date | Status |
 | :--- | :--- | :---: | :---: |
-| [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU Cache | 2026-11-02 | `Passing` |
+| [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU (Least Recently Used) Cache | 2026-11-02 | `Passing` |\n| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-02 | `Passing` |
 
 ---
 
