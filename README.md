@@ -28,7 +28,7 @@ java daily.Day001_LRU_Cache
 
 | File | Topic | Date | Status |
 | :--- | :--- | :---: | :---: |
-| [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU (Least Recently Used) Cache | 2026-11-02 | `Passing` |\n| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-02 | `Passing` |
+| [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU (Least Recently Used) Cache | 2026-11-02 | `Passing` |\n| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-03 | `Passing` |\n| [`Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) | Stack Data Structure | 2026-11-03 | `Passing` |
 
 ---
 
