@@ -444,15 +444,18 @@ public class Day010_Observer_Pattern_EventBus {
 
 def generate_dynamic_topic(day_num, date_str):
     topics = [
-        ("Longest_Palindromic_Substring", "Dynamic Programming - Longest Palindromic Substring", "DP", "Expand around center algorithm with O(n^2) time and O(1) space."),
-        ("Dijkstra_Shortest_Path", "Graph Algorithms - Dijkstra's Algorithm", "Graphs", "Single source shortest path using PriorityQueue and Adjacency List."),
-        ("Kth_Largest_Element", "Heap / Quickselect - Kth Largest Element", "Algorithms", "Min-heap and quickselect implementations with O(n) average time."),
-        ("Topological_Sort", "Graphs - Kahn's Algorithm for Topological Sort", "Graphs", "Detect cycles and order dependencies in DAG using in-degree array."),
-        ("Builder_Pattern", "Design Patterns - Fluent Builder Pattern", "Design Patterns", "Type-safe immutable object creation with nested builder class."),
-        ("Custom_Generic_LinkedList", "Data Structures - Generic Singly Linked List", "Data Structures", "Generics, pointer manipulation, and iterator implementation."),
-        ("Sliding_Window_Maximum", "Data Structures - Sliding Window Maximum with Deque", "Algorithms", "Monotonic queue pattern to find max in window in O(n) time.")
+        ("Merge_Intervals", "Interval Scheduling - Merge Overlapping Intervals & Insert Interval", "Algorithms", "Interval sorting and greedy sweep algorithm with O(n log n) time and O(n) space."),
+        ("Token_Bucket_Rate_Limiter", "System Design & Concurrency - Token Bucket Rate Limiter", "Concurrency", "Thread-safe token bucket algorithm with atomic time calculations and refill rates."),
+        ("Disjoint_Set_Union", "Data Structures - Disjoint Set Union (DSU) with Path Compression", "Data Structures", "Union-Find with rank and path compression for dynamic connectivity in almost O(1) amortized time."),
+        ("Consistent_Hashing_Ring", "Distributed Systems - Consistent Hashing Ring with Virtual Nodes", "System Design", "Distributed cache routing and minimal key migration using TreeMap and SHA-256 virtual nodes."),
+        ("Lock_Free_Stack_Treiber", "Concurrency - Lock-Free Treiber Stack with AtomicReference", "Concurrency", "Non-blocking stack using Compare-And-Swap (CAS) primitives and optimistic retry loops."),
+        ("Segment_Tree_Range_Query", "Trees & Range Queries - Segment Tree with Point Updates", "Data Structures", "Divide-and-conquer binary tree supporting range sum queries and point updates in O(log n) time."),
+        ("LRU_LFU_Hybrid_Cache", "System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists", "Data Structures", "Frequency bucket architecture achieving O(1) get and put operations."),
+        ("A_Star_Pathfinding", "Graph Algorithms - A* Shortest Path Search with Heuristics", "Algorithms", "Informed heuristic search algorithm finding minimum cost paths on 2D grid/graph."),
+        ("Read_Write_Lock_Implementation", "Multithreading - Custom Fair ReadWriteLock with Reentrancy", "Concurrency", "Synchronization monitor preventing reader starvation with thread reentrancy counters."),
+        ("Thread_Pool_Executor_Custom", "Multithreading - Custom Thread Pool Executor & Work Stealing", "Concurrency", "Worker thread lifecycle management, bounded task queue, and graceful shutdown.")
     ]
-    pick = topics[(day_num - 1) % len(topics)]
+    pick = topics[(day_num - 18) % len(topics)] if day_num >= 18 else topics[0]
     name, title, cat, desc = pick
     filename = f"Day{day_num:03d}_{name}.java"
     class_name = f"Day{day_num:03d}_{name}"
@@ -507,7 +510,7 @@ def update_readme(daily_dir, readme_path):
 
         table_rows.append(f"| [`{f}`](daily/{f}) | {topic} | {date_str} | `Passing` |")
 
-    table_md = "\\n".join(table_rows)
+    table_md = "\n".join(table_rows)
 
     readme_content = f"""# ☕ Daily Java Practice & System Design
 
