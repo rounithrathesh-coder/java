@@ -46,6 +46,7 @@ java daily.Day001_LRU_Cache
 | [`Day016_Dijkstra_Shortest_Path.java`](daily/Day016_Dijkstra_Shortest_Path.java) | Graph Algorithms - Dijkstra's Single-Source Shortest Path | 2026-11-11 | `Passing` |
 | [`Day017_Kth_Largest_Element.java`](daily/Day017_Kth_Largest_Element.java) | Heap / Quickselect - Kth Largest Element | 2026-11-11 | `Passing` |
 | [`Day018_Merge_Intervals.java`](daily/Day018_Merge_Intervals.java) | Interval Scheduling - Merge Overlapping Intervals & Insert Interval | 2026-11-12 | `Passing` |
+| [`Day019_Token_Bucket_Rate_Limiter.java`](daily/Day019_Token_Bucket_Rate_Limiter.java) | System Design & Concurrency - Token Bucket Rate Limiter | 2026-11-12 | `Passing` |
 
 ---
 
