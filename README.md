@@ -29,15 +29,15 @@ java daily.Day001_LRU_Cache
 | File | Topic | Date | Status |
 | :--- | :--- | :---: | :---: |
 | [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU (Least Recently Used) Cache | 2026-11-02 | `Passing` |
-| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-12 | `Passing` |
-| [`Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) | Stack Data Structure | 2026-11-12 | `Passing` |
-| [`Day004_Java_Streams_And_Lambdas.java`](daily/Day004_Java_Streams_And_Lambdas.java) | Functional Programming in Modern Java | 2026-11-12 | `Passing` |
-| [`Day005_Producer_Consumer_BlockingQueue.java`](daily/Day005_Producer_Consumer_BlockingQueue.java) | Multithreading & Concurrent Collections | 2026-11-12 | `Passing` |
-| [`Day006_Trie_Prefix_Tree.java`](daily/Day006_Trie_Prefix_Tree.java) | Tree Data Structures & Autocomplete | 2026-11-12 | `Passing` |
-| [`Day007_Singleton_ThreadSafe_DoubleChecked.java`](daily/Day007_Singleton_ThreadSafe_DoubleChecked.java) | Creational Design Patterns & JVM Memory Model | 2026-11-12 | `Passing` |
-| [`Day008_Binary_Search_Rotated_Array.java`](daily/Day008_Binary_Search_Rotated_Array.java) | Binary Search | 2026-11-12 | `Passing` |
-| [`Day009_CompletableFuture_Async_Pipeline.java`](daily/Day009_CompletableFuture_Async_Pipeline.java) | Asynchronous Programming in Java 8+ | 2026-11-12 | `Passing` |
-| [`Day010_Observer_Pattern_EventBus.java`](daily/Day010_Observer_Pattern_EventBus.java) | Event-driven Architecture & Behavioral Design Patterns | 2026-11-12 | `Passing` |
+| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-13 | `Passing` |
+| [`Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) | Stack Data Structure | 2026-11-13 | `Passing` |
+| [`Day004_Java_Streams_And_Lambdas.java`](daily/Day004_Java_Streams_And_Lambdas.java) | Functional Programming in Modern Java | 2026-11-13 | `Passing` |
+| [`Day005_Producer_Consumer_BlockingQueue.java`](daily/Day005_Producer_Consumer_BlockingQueue.java) | Multithreading & Concurrent Collections | 2026-11-13 | `Passing` |
+| [`Day006_Trie_Prefix_Tree.java`](daily/Day006_Trie_Prefix_Tree.java) | Tree Data Structures & Autocomplete | 2026-11-13 | `Passing` |
+| [`Day007_Singleton_ThreadSafe_DoubleChecked.java`](daily/Day007_Singleton_ThreadSafe_DoubleChecked.java) | Creational Design Patterns & JVM Memory Model | 2026-11-13 | `Passing` |
+| [`Day008_Binary_Search_Rotated_Array.java`](daily/Day008_Binary_Search_Rotated_Array.java) | Binary Search | 2026-11-13 | `Passing` |
+| [`Day009_CompletableFuture_Async_Pipeline.java`](daily/Day009_CompletableFuture_Async_Pipeline.java) | Asynchronous Programming in Java 8+ | 2026-11-13 | `Passing` |
+| [`Day010_Observer_Pattern_EventBus.java`](daily/Day010_Observer_Pattern_EventBus.java) | Event-driven Architecture & Behavioral Design Patterns | 2026-11-13 | `Passing` |
 | [`Day011_Topological_Sort.java`](daily/Day011_Topological_Sort.java) | Graphs - Kahn's Algorithm for Topological Sort | 2026-11-08 | `Passing` |
 | [`Day012_Builder_Pattern.java`](daily/Day012_Builder_Pattern.java) | Design Patterns - Fluent Builder Pattern | 2026-11-09 | `Passing` |
 | [`Day013_Custom_Generic_LinkedList.java`](daily/Day013_Custom_Generic_LinkedList.java) | Data Structures - Generic Singly Linked List | 2026-11-10 | `Passing` |
@@ -47,6 +47,7 @@ java daily.Day001_LRU_Cache
 | [`Day017_Kth_Largest_Element.java`](daily/Day017_Kth_Largest_Element.java) | Heap / Quickselect - Kth Largest Element | 2026-11-11 | `Passing` |
 | [`Day018_Merge_Intervals.java`](daily/Day018_Merge_Intervals.java) | Interval Scheduling - Merge Overlapping Intervals & Insert Interval | 2026-11-12 | `Passing` |
 | [`Day019_Token_Bucket_Rate_Limiter.java`](daily/Day019_Token_Bucket_Rate_Limiter.java) | System Design & Concurrency - Token Bucket Rate Limiter | 2026-11-12 | `Passing` |
+| [`Day020_Disjoint_Set_Union.java`](daily/Day020_Disjoint_Set_Union.java) | Data Structures - Disjoint Set Union (DSU) with Path Compression | 2026-11-13 | `Passing` |
 
 ---
 
