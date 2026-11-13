@@ -47,7 +47,8 @@ java daily.Day001_LRU_Cache
 | [`Day017_Kth_Largest_Element.java`](daily/Day017_Kth_Largest_Element.java) | Heap / Quickselect - Kth Largest Element | 2026-11-11 | `Passing` |
 | [`Day018_Merge_Intervals.java`](daily/Day018_Merge_Intervals.java) | Interval Scheduling - Merge Overlapping Intervals & Insert Interval | 2026-11-12 | `Passing` |
 | [`Day019_Token_Bucket_Rate_Limiter.java`](daily/Day019_Token_Bucket_Rate_Limiter.java) | System Design & Concurrency - Token Bucket Rate Limiter | 2026-11-12 | `Passing` |
-| [`Day020_Disjoint_Set_Union.java`](daily/Day020_Disjoint_Set_Union.java) | Data Structures - Disjoint Set Union (DSU) with Path Compression | 2026-11-13 | `Passing` |
+| [`Day020_Disjoint_Set_Union.java`](daily/Day020_Disjoint_Set_Union.java) | Data Structures - Disjoint Set Union (DSU) with Path Compression & Union by Rank | 2026-11-13 | `Passing` |
+| [`Day021_Consistent_Hashing_Ring.java`](daily/Day021_Consistent_Hashing_Ring.java) | Distributed Systems - Consistent Hashing Ring with Virtual Nodes | 2026-11-13 | `Passing` |
 
 ---
 
