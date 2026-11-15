@@ -29,15 +29,15 @@ java daily.Day001_LRU_Cache
 | File | Topic | Date | Status |
 | :--- | :--- | :---: | :---: |
 | [`Day001_LRU_Cache.java`](daily/Day001_LRU_Cache.java) | Data Structures & System Design - LRU (Least Recently Used) Cache | 2026-11-02 | `Passing` |
-| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-14 | `Passing` |
-| [`Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) | Stack Data Structure | 2026-11-14 | `Passing` |
-| [`Day004_Java_Streams_And_Lambdas.java`](daily/Day004_Java_Streams_And_Lambdas.java) | Functional Programming in Modern Java | 2026-11-14 | `Passing` |
-| [`Day005_Producer_Consumer_BlockingQueue.java`](daily/Day005_Producer_Consumer_BlockingQueue.java) | Multithreading & Concurrent Collections | 2026-11-14 | `Passing` |
-| [`Day006_Trie_Prefix_Tree.java`](daily/Day006_Trie_Prefix_Tree.java) | Tree Data Structures & Autocomplete | 2026-11-14 | `Passing` |
-| [`Day007_Singleton_ThreadSafe_DoubleChecked.java`](daily/Day007_Singleton_ThreadSafe_DoubleChecked.java) | Creational Design Patterns & JVM Memory Model | 2026-11-14 | `Passing` |
-| [`Day008_Binary_Search_Rotated_Array.java`](daily/Day008_Binary_Search_Rotated_Array.java) | Binary Search | 2026-11-14 | `Passing` |
-| [`Day009_CompletableFuture_Async_Pipeline.java`](daily/Day009_CompletableFuture_Async_Pipeline.java) | Asynchronous Programming in Java 8+ | 2026-11-14 | `Passing` |
-| [`Day010_Observer_Pattern_EventBus.java`](daily/Day010_Observer_Pattern_EventBus.java) | Event-driven Architecture & Behavioral Design Patterns | 2026-11-14 | `Passing` |
+| [`Day002_Two_Sum_Optimal.java`](daily/Day002_Two_Sum_Optimal.java) | Arrays, Hash Maps | 2026-11-15 | `Passing` |
+| [`Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) | Stack Data Structure | 2026-11-15 | `Passing` |
+| [`Day004_Java_Streams_And_Lambdas.java`](daily/Day004_Java_Streams_And_Lambdas.java) | Functional Programming in Modern Java | 2026-11-15 | `Passing` |
+| [`Day005_Producer_Consumer_BlockingQueue.java`](daily/Day005_Producer_Consumer_BlockingQueue.java) | Multithreading & Concurrent Collections | 2026-11-15 | `Passing` |
+| [`Day006_Trie_Prefix_Tree.java`](daily/Day006_Trie_Prefix_Tree.java) | Tree Data Structures & Autocomplete | 2026-11-15 | `Passing` |
+| [`Day007_Singleton_ThreadSafe_DoubleChecked.java`](daily/Day007_Singleton_ThreadSafe_DoubleChecked.java) | Creational Design Patterns & JVM Memory Model | 2026-11-15 | `Passing` |
+| [`Day008_Binary_Search_Rotated_Array.java`](daily/Day008_Binary_Search_Rotated_Array.java) | Binary Search | 2026-11-15 | `Passing` |
+| [`Day009_CompletableFuture_Async_Pipeline.java`](daily/Day009_CompletableFuture_Async_Pipeline.java) | Asynchronous Programming in Java 8+ | 2026-11-15 | `Passing` |
+| [`Day010_Observer_Pattern_EventBus.java`](daily/Day010_Observer_Pattern_EventBus.java) | Event-driven Architecture & Behavioral Design Patterns | 2026-11-15 | `Passing` |
 | [`Day011_Topological_Sort.java`](daily/Day011_Topological_Sort.java) | Graphs - Kahn's Algorithm for Topological Sort | 2026-11-08 | `Passing` |
 | [`Day012_Builder_Pattern.java`](daily/Day012_Builder_Pattern.java) | Design Patterns - Fluent Builder Pattern | 2026-11-09 | `Passing` |
 | [`Day013_Custom_Generic_LinkedList.java`](daily/Day013_Custom_Generic_LinkedList.java) | Data Structures - Generic Singly Linked List | 2026-11-10 | `Passing` |
@@ -50,6 +50,7 @@ java daily.Day001_LRU_Cache
 | [`Day020_Disjoint_Set_Union.java`](daily/Day020_Disjoint_Set_Union.java) | Data Structures - Disjoint Set Union (DSU) with Path Compression & Union by Rank | 2026-11-13 | `Passing` |
 | [`Day021_Consistent_Hashing_Ring.java`](daily/Day021_Consistent_Hashing_Ring.java) | Distributed Systems - Consistent Hashing Ring with Virtual Nodes | 2026-11-13 | `Passing` |
 | [`Day022_Lock_Free_Stack_Treiber.java`](daily/Day022_Lock_Free_Stack_Treiber.java) | Concurrency - Lock-Free Treiber Stack with AtomicReference | 2026-11-14 | `Passing` |
+| [`Day023_Segment_Tree_Range_Query.java`](daily/Day023_Segment_Tree_Range_Query.java) | Trees & Range Queries - Segment Tree with Point Updates | 2026-11-15 | `Passing` |
 
 ---
 
