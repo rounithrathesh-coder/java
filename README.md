@@ -51,6 +51,7 @@ java daily.Day001_LRU_Cache
 | [`Day021_Consistent_Hashing_Ring.java`](daily/Day021_Consistent_Hashing_Ring.java) | Distributed Systems - Consistent Hashing Ring with Virtual Nodes | 2026-11-13 | `Passing` |
 | [`Day022_Lock_Free_Stack_Treiber.java`](daily/Day022_Lock_Free_Stack_Treiber.java) | Concurrency - Lock-Free Treiber Stack with AtomicReference | 2026-11-14 | `Passing` |
 | [`Day023_Segment_Tree_Range_Query.java`](daily/Day023_Segment_Tree_Range_Query.java) | Trees & Range Queries - Segment Tree with Point Updates | 2026-11-15 | `Passing` |
+| [`Day024_LRU_LFU_Hybrid_Cache.java`](daily/Day024_LRU_LFU_Hybrid_Cache.java) | System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists | 2026-11-15 | `Passing` |
 
 ---
 
