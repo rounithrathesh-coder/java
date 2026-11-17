@@ -54,6 +54,7 @@ java daily.Day001_LRU_Cache
 | [`Day024_LRU_LFU_Hybrid_Cache.java`](daily/Day024_LRU_LFU_Hybrid_Cache.java) | System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists | 2026-11-15 | `Passing` |
 | [`Day025_A_Star_Pathfinding.java`](daily/Day025_A_Star_Pathfinding.java) | Graph Algorithms - A* Shortest Path Search with Heuristics | 2026-11-16 | `Passing` |
 | [`Day026_Read_Write_Lock_Implementation.java`](daily/Day026_Read_Write_Lock_Implementation.java) | Multithreading - Custom Fair ReadWriteLock with Reentrancy | 2026-11-17 | `Passing` |
+| [`Day027_Thread_Pool_Executor_Custom.java`](daily/Day027_Thread_Pool_Executor_Custom.java) | Multithreading - Custom Thread Pool Executor & Worker Task Queue | 2026-11-17 | `Passing` |
 
 ---
 
