@@ -453,7 +453,14 @@ def generate_dynamic_topic(day_num, date_str):
         ("LRU_LFU_Hybrid_Cache", "System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists", "Data Structures", "Frequency bucket architecture achieving O(1) get and put operations."),
         ("A_Star_Pathfinding", "Graph Algorithms - A* Shortest Path Search with Heuristics", "Algorithms", "Informed heuristic search algorithm finding minimum cost paths on 2D grid/graph."),
         ("Read_Write_Lock_Implementation", "Multithreading - Custom Fair ReadWriteLock with Reentrancy", "Concurrency", "Synchronization monitor preventing reader starvation with thread reentrancy counters."),
-        ("Thread_Pool_Executor_Custom", "Multithreading - Custom Thread Pool Executor & Work Stealing", "Concurrency", "Worker thread lifecycle management, bounded task queue, and graceful shutdown.")
+        ("Thread_Pool_Executor_Custom", "Multithreading - Custom Thread Pool Executor & Work Stealing", "Concurrency", "Worker thread lifecycle management, bounded task queue, and graceful shutdown."),
+        ("Bloom_Filter_Probabilistic", "Probabilistic Data Structures - Bloom Filter with Optimal Hash Sizing", "Data Structures", "Space-efficient probabilistic set membership with bounded false positive rate and zero false negatives."),
+        ("Skip_List_Concurrent", "Data Structures - Concurrent SkipList Map with Probabilistic Balancing", "Concurrency", "Multi-level linked hierarchy supporting O(log n) search, insertion, and deletion without global locks."),
+        ("K_Way_Merge_Sorted_Streams", "Algorithms - K-Way Merge with PriorityQueue & External Sorting", "Algorithms", "Combining K sorted streams into a single ordered output using min-heap in O(N log K) time."),
+        ("Red_Black_Tree_Rotations", "Trees - Red-Black Tree Self-Balancing Insertions & Rotations", "Data Structures", "Left and right tree rotations preserving black-height and coloring invariants."),
+        ("Sliding_Window_Rate_Limiter", "Distributed Systems - Sliding Window Counter Rate Limiter", "System Design", "Memory-efficient hybrid fixed/sliding window counter algorithm preventing boundary traffic bursts."),
+        ("Count_Min_Sketch_Heavy_Hitters", "Streaming Algorithms - Count-Min Sketch & Top-K Heavy Hitters", "Probabilistic Algorithms", "Sub-linear frequency estimation for massive real-time event streams."),
+        ("Tarjan_Strongly_Connected_Components", "Graph Algorithms - Tarjan's Strongly Connected Components (SCC)", "Graphs", "Single-pass DFS using discovery times and low-link values to detect SCCs in O(V + E).")
     ]
     pick = topics[(day_num - 18) % len(topics)] if day_num >= 18 else topics[0]
     name, title, cat, desc = pick

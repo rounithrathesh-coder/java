@@ -55,7 +55,7 @@ java daily.Day001_LRU_Cache
 | [`Day025_A_Star_Pathfinding.java`](daily/Day025_A_Star_Pathfinding.java) | Graph Algorithms - A* Shortest Path Search with Heuristics | 2026-11-16 | `Passing` |
 | [`Day026_Read_Write_Lock_Implementation.java`](daily/Day026_Read_Write_Lock_Implementation.java) | Multithreading - Custom Fair ReadWriteLock with Reentrancy | 2026-11-17 | `Passing` |
 | [`Day027_Thread_Pool_Executor_Custom.java`](daily/Day027_Thread_Pool_Executor_Custom.java) | Multithreading - Custom Thread Pool Executor & Worker Task Queue | 2026-11-17 | `Passing` |
-| [`Day028_Merge_Intervals.java`](daily/Day028_Merge_Intervals.java) | Interval Scheduling - Merge Overlapping Intervals & Insert Interval | 2026-11-18 | `Passing` |
+| [`Day028_Bloom_Filter_Probabilistic.java`](daily/Day028_Bloom_Filter_Probabilistic.java) | Probabilistic Data Structures - Bloom Filter with Optimal Hash Sizing | 2026-11-18 | `Passing` |
 
 ---
 
