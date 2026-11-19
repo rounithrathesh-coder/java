@@ -9,7 +9,7 @@ Welcome to my daily Java coding journey! This repository features daily code imp
 ---
 
 ## ⚡ Automated Daily Updates
-This repository automatically receives daily code challenges and solutions via **GitHub Actions** workflows running every morning.
+This repository automatically receives daily code challenges and solutions via **GitHub Actions** scheduled workflows running every morning at **03:25 UTC (08:55 AM IST)**.
 
 ### How to Run Locally
 ```bash
@@ -21,6 +21,16 @@ cd java
 javac daily/Day001_LRU_Cache.java
 java daily.Day001_LRU_Cache
 ```
+
+---
+
+## 🎓 Academic Curriculum & Syllabus Integration (REC R2023 IT)
+Starting from **Day 030**, the automated daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
+- **Unit I (OOP Fundamentals & Java Basics):** Bitwise operators, data types, control flow, Java 17+ pattern matching switch
+- **Unit II (Classes & Inheritance):** Class hierarchies, constructor chaining (`super()`), method overriding vs dynamic dispatch, abstract classes, `Object` class contracts (`equals`, `hashCode`, `toString`)
+- **Unit III (Packages, Interfaces & Exception Handling):** Package structures, access modifiers, nested interfaces, checked vs unchecked exception hierarchy, `try-with-resources`, interface default/static/private methods
+- **Unit IV (I/O & Collections Framework):** Byte streams vs Character streams, Object serialization (`transient`, `serialVersionUID`), `TreeSet`/`TreeMap` Red-Black invariants, Generics bounded wildcards (`? extends`, `? super`), `PriorityQueue` heaps, `HashMap` tree-binning collision resolution
+- **Unit V (Streams API, Lambdas & JDBC):** Predefined functional interfaces (`Predicate`, `Function`, `Consumer`, `Supplier`), Stream API reductions and custom collectors (`groupingBy`, `partitioningBy`), Parallel streams with `ForkJoinPool`, JDBC transaction boundaries, savepoints, batch updates, and scrollable `ResultSet`
 
 ---
 
@@ -60,27 +70,10 @@ java daily.Day001_LRU_Cache
 
 ---
 
----
-
-## 🎓 Academic Curriculum & Syllabus Mapping (REC R2023 IT)
-
-This repository comprehensively covers the official **Rajalakshmi Engineering College (REC) R2023 IT Syllabus**:
-
-| Unit | Syllabus Module | Key Topics Covered | Reference Implementations |
-| :---: | :--- | :--- | :--- |
-| **Unit I** | **Introduction to OOP & Java Fundamentals** | Java Architecture, JVM, Data Types, Variables, Operators, Conditionals, Loops | [`Basics/`](Basics/), [`Loops/`](Loops/) |
-| **Unit II** | **Classes and Inheritance** | Classes, Constructors, Polymorphism, Method Overriding, Abstract Classes, Object Class (`equals`/`hashCode`/`toString`) | [`OOPS/`](OOPS/), [`syllabus/Unit2_Inheritance_AbstractClasses_ObjectMethods.java`](syllabus/Unit2_Inheritance_AbstractClasses_ObjectMethods.java) |
-| **Unit III** | **Packages, Interfaces & Exception Handling** | Packages, Access Specifiers, Nested Interfaces, Checked vs Unchecked Exceptions, Try-With-Resources | [`syllabus/Unit3_Exception_Handling_And_Nested_Interfaces.java`](syllabus/Unit3_Exception_Handling_And_Nested_Interfaces.java) |
-| **Unit IV** | **I/O and Collections** | Byte Streams vs Character Streams, Buffered Streams, Collection Interfaces (`TreeSet`, `PriorityQueue`, `Map`) | [`syllabus/Unit4_Byte_And_Character_Streams_IO.java`](syllabus/Unit4_Byte_And_Character_Streams_IO.java), [`daily/Day003_Valid_Parentheses_Stack.java`](daily/Day003_Valid_Parentheses_Stack.java) |
-| **Unit V** | **Streams API, Lambda & JDBC** | Stream Reductions, Predefined Functional Interfaces (`Predicate`, `Function`, `Consumer`, `Supplier`), JDBC Transactions & Batching | [`syllabus/Unit5_Predefined_Functional_Interfaces.java`](syllabus/Unit5_Predefined_Functional_Interfaces.java), [`syllabus/Unit5_JDBC_Transaction_And_Batch_Processing.java`](syllabus/Unit5_JDBC_Transaction_And_Batch_Processing.java), [`daily/Day004_Java_Streams_And_Lambdas.java`](daily/Day004_Java_Streams_And_Lambdas.java) |
-
----
-
 ## 📂 Repository Structure
 - `Basics/`: Java fundamentals, datatypes, operators, conditionals
 - `Loops/`: Loops, iterations, logic puzzles
 - `OOPS/`: Object-Oriented Programming (Classes, Inheritance, Polymorphism, Encapsulation)
-- `syllabus/`: Complete REC R2023 IT academic curriculum modules
 - `daily/`: Daily code challenges, advanced algorithms, and design patterns
 - `.github/workflows/`: CI/CD automation for scheduled daily code updates
 

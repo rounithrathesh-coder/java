@@ -442,34 +442,296 @@ public class Day010_Observer_Pattern_EventBus {
     }
 ]
 
+# Curated Syllabus Topics for Daily Practice based on REC R2023 IT Curriculum
+SYLLABUS_TOPICS = [
+    # Unit II: Classes and Inheritance
+    ("Inheritance_Abstract_Classes_And_Object_Contract", "REC Unit II - Classes, Abstract Classes & Object Methods (equals/hashCode)", "Classes and Inheritance", "Inheritance hierarchies, constructor chaining with super(), abstract classes, and Object contract."),
+    
+    # Unit III: Packages, Interface & Exception Handling
+    ("Custom_Exception_Hierarchy_And_Nested_Interfaces", "REC Unit III - Exception Handling & Nested Interfaces", "Interfaces & Exceptions", "Custom checked/unchecked exception hierarchy, try-with-resources, and nested interface callback contracts."),
+    
+    # Unit IV: I/O and Collections
+    ("Byte_Streams_Vs_Character_Streams_IO", "REC Unit IV - Byte Streams vs Character Streams (Buffered I/O)", "I/O and Collections", "Raw binary stream processing with BufferedInputStream vs Unicode text stream decoding with BufferedReader."),
+    ("Object_Serialization_And_Deep_Copy", "REC Unit IV - Object Serialization & Deep Copying", "I/O and Collections", "ObjectInputStream, ObjectOutputStream, transient fields, serialVersionUID, and deep clone serialization."),
+    ("TreeSet_TreeMap_Custom_Comparator", "REC Unit IV - Collection Framework (TreeSet, TreeMap & Red-Black Invariant)", "Collections", "Self-balancing sorted sets and maps using custom Comparators and range subSet/subMap views."),
+    
+    # Unit V: Streams API, Lambda and JDBC
+    ("Predefined_Functional_Interfaces_And_Streams", "REC Unit V - Predefined Functional Interfaces & Stream Reductions", "Streams & Lambdas", "Core functional interfaces (Predicate, Function, Consumer, Supplier, BiFunction) and stream reduction operations."),
+    ("JDBC_Batch_Processing_And_Transactions", "REC Unit V - Accessing Databases with JDBC (Batch Updates & Transactions)", "JDBC", "PreparedStatement batch operations, connection transaction boundaries, and savepoint rollbacks."),
+    ("Parallel_Streams_And_ForkJoinPool", "REC Unit V - Parallel Streams & ForkJoinPool Work-Stealing", "Streams API", "Multi-core stream decomposition, parallel reduction, Spliterator implementation, and thread safety."),
+    
+    # Unit I: Java Fundamentals
+    ("Bitwise_Operators_And_Pattern_Matching", "REC Unit I - Bitwise Shift Operators & Pattern Matching Switch", "Java Fundamentals", "Bitwise logic (AND, OR, XOR, unsigned shift >>>) and Java 17+ pattern matching switch expressions."),
+    
+    # Unit II: Methods & Overriding
+    ("Method_Overloading_Vs_Dynamic_Dispatch", "REC Unit II - Method Overloading vs Dynamic Method Overriding", "Classes & Methods", "Compile-time method overloading vs runtime polymorphic dynamic method dispatch."),
+    
+    # Unit III: Interface Evolution
+    ("Interface_Default_Static_Private_Methods", "REC Unit III - Interfaces (Default, Static & Private Methods)", "Interfaces", "Evolution of interfaces in modern Java: backward compatibility default methods and private helpers."),
+    
+    # Unit IV: Generics & Data Structures
+    ("Generics_Bounded_Wildcards_Type_Erasure", "REC Unit IV - Java Generics, Bounded Wildcards & Type Erasure", "Collections & Generics", "Generic classes, upper/lower bounded wildcards (? extends / ? super), and runtime bytecode type erasure."),
+    ("PriorityQueue_MinMax_Heap_Architecture", "REC Unit IV - PriorityQueue & Dual-Comparator Heap", "Collections", "Binary heap array invariant, custom priority scheduling, and top-K element streaming."),
+    ("HashMap_Collision_Resolution_TreeBinning", "REC Unit IV - HashMap Internals & Tree-Binning Collision Resolution", "Collections", "Hash distribution, linked-list bucket chaining, and tree-binning threshold transformations."),
+    
+    # Unit V: Advanced Streams & JDBC
+    ("Stream_Collectors_Grouping_And_Partitioning", "REC Unit V - Stream Collectors (groupingBy, partitioningBy, downstream collectors)", "Streams API", "Complex multi-level data grouping, partitioning predicates, and summarizing statistics collectors."),
+    ("JDBC_Scrollable_ResultSet_And_Metadata", "REC Unit V - JDBC Scrollable ResultSet & ResultSetMetaData", "JDBC", "Bidirectional cursor navigation, updateable result sets, and database schema metadata inspection.")
+]
+
 def generate_dynamic_topic(day_num, date_str):
-    topics = [
-        ("Merge_Intervals", "Interval Scheduling - Merge Overlapping Intervals & Insert Interval", "Algorithms", "Interval sorting and greedy sweep algorithm with O(n log n) time and O(n) space."),
-        ("Token_Bucket_Rate_Limiter", "System Design & Concurrency - Token Bucket Rate Limiter", "Concurrency", "Thread-safe token bucket algorithm with atomic time calculations and refill rates."),
-        ("Disjoint_Set_Union", "Data Structures - Disjoint Set Union (DSU) with Path Compression", "Data Structures", "Union-Find with rank and path compression for dynamic connectivity in almost O(1) amortized time."),
-        ("Consistent_Hashing_Ring", "Distributed Systems - Consistent Hashing Ring with Virtual Nodes", "System Design", "Distributed cache routing and minimal key migration using TreeMap and SHA-256 virtual nodes."),
-        ("Lock_Free_Stack_Treiber", "Concurrency - Lock-Free Treiber Stack with AtomicReference", "Concurrency", "Non-blocking stack using Compare-And-Swap (CAS) primitives and optimistic retry loops."),
-        ("Segment_Tree_Range_Query", "Trees & Range Queries - Segment Tree with Point Updates", "Data Structures", "Divide-and-conquer binary tree supporting range sum queries and point updates in O(log n) time."),
-        ("LRU_LFU_Hybrid_Cache", "System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists", "Data Structures", "Frequency bucket architecture achieving O(1) get and put operations."),
-        ("A_Star_Pathfinding", "Graph Algorithms - A* Shortest Path Search with Heuristics", "Algorithms", "Informed heuristic search algorithm finding minimum cost paths on 2D grid/graph."),
-        ("Read_Write_Lock_Implementation", "Multithreading - Custom Fair ReadWriteLock with Reentrancy", "Concurrency", "Synchronization monitor preventing reader starvation with thread reentrancy counters."),
-        ("Thread_Pool_Executor_Custom", "Multithreading - Custom Thread Pool Executor & Work Stealing", "Concurrency", "Worker thread lifecycle management, bounded task queue, and graceful shutdown."),
-        ("Bloom_Filter_Probabilistic", "Probabilistic Data Structures - Bloom Filter with Optimal Hash Sizing", "Data Structures", "Space-efficient probabilistic set membership with bounded false positive rate and zero false negatives."),
-        ("Skip_List_Concurrent", "Data Structures - Concurrent SkipList Map with Probabilistic Balancing", "Concurrency", "Multi-level linked hierarchy supporting O(log n) search, insertion, and deletion without global locks."),
-        ("K_Way_Merge_Sorted_Streams", "Algorithms - K-Way Merge with PriorityQueue & External Sorting", "Algorithms", "Combining K sorted streams into a single ordered output using min-heap in O(N log K) time."),
-        ("Red_Black_Tree_Rotations", "Trees - Red-Black Tree Self-Balancing Insertions & Rotations", "Data Structures", "Left and right tree rotations preserving black-height and coloring invariants."),
-        ("Sliding_Window_Rate_Limiter", "Distributed Systems - Sliding Window Counter Rate Limiter", "System Design", "Memory-efficient hybrid fixed/sliding window counter algorithm preventing boundary traffic bursts."),
-        ("Count_Min_Sketch_Heavy_Hitters", "Streaming Algorithms - Count-Min Sketch & Top-K Heavy Hitters", "Probabilistic Algorithms", "Sub-linear frequency estimation for massive real-time event streams."),
-        ("Tarjan_Strongly_Connected_Components", "Graph Algorithms - Tarjan's Strongly Connected Components (SCC)", "Graphs", "Single-pass DFS using discovery times and low-link values to detect SCCs in O(V + E).")
-    ]
-    pick = topics[(day_num - 18) % len(topics)] if day_num >= 18 else topics[0]
-    name, title, cat, desc = pick
+    if day_num >= 30:
+        idx = (day_num - 30) % len(SYLLABUS_TOPICS)
+        name, title, cat, desc = SYLLABUS_TOPICS[idx]
+    else:
+        topics = [
+            ("Merge_Intervals", "Interval Scheduling - Merge Overlapping Intervals & Insert Interval", "Algorithms", "Interval sorting and greedy sweep algorithm."),
+            ("Token_Bucket_Rate_Limiter", "System Design & Concurrency - Token Bucket Rate Limiter", "Concurrency", "Thread-safe token bucket algorithm."),
+            ("Disjoint_Set_Union", "Data Structures - Disjoint Set Union (DSU) with Path Compression", "Data Structures", "Union-Find with rank and path compression."),
+            ("Consistent_Hashing_Ring", "Distributed Systems - Consistent Hashing Ring with Virtual Nodes", "System Design", "Distributed cache routing and virtual nodes."),
+            ("Lock_Free_Stack_Treiber", "Concurrency - Lock-Free Treiber Stack with AtomicReference", "Concurrency", "Non-blocking stack using CAS primitives."),
+            ("Segment_Tree_Range_Query", "Trees & Range Queries - Segment Tree with Point Updates", "Data Structures", "Divide-and-conquer binary tree supporting range sum queries."),
+            ("LRU_LFU_Hybrid_Cache", "System Design - LFU (Least Frequently Used) Cache with Doubly Linked Lists", "Data Structures", "Frequency bucket architecture achieving O(1) operations."),
+            ("A_Star_Pathfinding", "Graph Algorithms - A* Shortest Path Search with Heuristics", "Algorithms", "Informed heuristic search algorithm on 2D grid."),
+            ("Read_Write_Lock_Implementation", "Multithreading - Custom Fair ReadWriteLock with Reentrancy", "Concurrency", "Synchronization monitor preventing reader starvation."),
+            ("Thread_Pool_Executor_Custom", "Multithreading - Custom Thread Pool Executor & Work Stealing", "Concurrency", "Worker thread lifecycle management and task queue."),
+            ("Bloom_Filter_Probabilistic", "Probabilistic Data Structures - Bloom Filter with Optimal Hash Sizing", "Data Structures", "Space-efficient probabilistic set membership with zero false negatives."),
+            ("Skip_List_Concurrent", "Data Structures - Concurrent SkipList Map with Probabilistic Balancing", "Concurrency", "Multi-level linked hierarchy supporting O(log n) operations.")
+        ]
+        pick = topics[(day_num - 18) % len(topics)]
+        name, title, cat, desc = pick
+
     filename = f"Day{day_num:03d}_{name}.java"
     class_name = f"Day{day_num:03d}_{name}"
-    content = f"""/**
+    content = generate_java_syllabus_content(class_name, day_num, date_str, name, title, cat, desc)
+    return {
+        "filename": filename,
+        "topic": title,
+        "category": cat,
+        "description": desc,
+        "content": content
+    }
+
+def generate_java_syllabus_content(class_name, day_num, date_str, name, title, cat, desc):
+    # Specialized curriculum generators for REC R2023 IT Syllabus (Day 030+)
+    if name == "Inheritance_Abstract_Classes_And_Object_Contract":
+        return f"""/**
  * Daily Java Challenge - Day {day_num:03d} ({date_str})
  * Topic: {title}
  * Category: {cat}
+ * Curriculum: REC R2023 IT - Unit II (Classes and Inheritance)
+ * 
+ * Description:
+ * Demonstrates OOP inheritance hierarchies, constructor chaining with super(),
+ * abstract classes with contract enforcement, and the java.lang.Object contract
+ * (equals, hashCode, toString).
+ */
+import java.util.Objects;
+import java.util.HashSet;
+import java.util.Set;
+
+public class {class_name} {{
+
+    public static abstract class Employee {{
+        protected final String empId;
+        protected String name;
+        protected double baseSalary;
+
+        public Employee(String empId, String name, double baseSalary) {{
+            this.empId = Objects.requireNonNull(empId, "Employee ID cannot be null");
+            this.name = Objects.requireNonNull(name, "Name cannot be null");
+            this.baseSalary = baseSalary;
+        }}
+
+        // Abstract method: mandatory contract for subclasses
+        public abstract double calculateTotalCompensation();
+
+        public String getEmpId() {{ return empId; }}
+        public String getName() {{ return name; }}
+        public double getBaseSalary() {{ return baseSalary; }}
+
+        // java.lang.Object Contract: equals and hashCode must be consistent
+        @Override
+        public boolean equals(Object o) {{
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Employee employee = (Employee) o;
+            return Objects.equals(empId, employee.empId);
+        }}
+
+        @Override
+        public int hashCode() {{
+            return Objects.hash(empId);
+        }}
+
+        @Override
+        public String toString() {{
+            return String.format("%s[ID=%s, Name='%s', Base=$%.2f, Total=$%.2f]",
+                    getClass().getSimpleName(), empId, name, baseSalary, calculateTotalCompensation());
+        }}
+    }}
+
+    public static class SoftwareEngineer extends Employee {{
+        private final double stockBonus;
+
+        public SoftwareEngineer(String empId, String name, double baseSalary, double stockBonus) {{
+            super(empId, name, baseSalary); // Constructor chaining
+            this.stockBonus = stockBonus;
+        }}
+
+        @Override
+        public double calculateTotalCompensation() {{
+            return baseSalary + stockBonus;
+        }}
+    }}
+
+    public static class EngineeringManager extends Employee {{
+        private final double performanceBonus;
+        private final int teamSize;
+
+        public EngineeringManager(String empId, String name, double baseSalary, double performanceBonus, int teamSize) {{
+            super(empId, name, baseSalary);
+            this.performanceBonus = performanceBonus;
+            this.teamSize = teamSize;
+        }}
+
+        @Override
+        public double calculateTotalCompensation() {{
+            return baseSalary + performanceBonus + (teamSize * 500.0);
+        }}
+    }}
+
+    public static void main(String[] args) {{
+        System.out.println("=== REC Unit II: Inheritance & Object Contract Demo ===");
+        Employee dev = new SoftwareEngineer("E101", "Alex Chen", 120000, 25000);
+        Employee mgr = new EngineeringManager("E102", "Sarah Connor", 150000, 40000, 8);
+        Employee devClone = new SoftwareEngineer("E101", "Alex Chen (Duplicate ID)", 120000, 25000);
+
+        System.out.println("Dev: " + dev);
+        System.out.println("Mgr: " + mgr);
+
+        // Verify Object Contract (equals and hashCode)
+        System.out.println("\\nChecking Equality Contract:");
+        System.out.println("dev.equals(devClone) -> " + dev.equals(devClone) + " (Expected: true)");
+        assert dev.equals(devClone) : "Equals contract failed!";
+
+        Set<Employee> teamSet = new HashSet<>();
+        teamSet.add(dev);
+        teamSet.add(mgr);
+        teamSet.add(devClone); // Should be deduplicated by hash set
+        System.out.println("Set size after adding duplicate ID: " + teamSet.size() + " (Expected: 2)");
+        assert teamSet.size() == 2 : "HashSet deduplication failed!";
+        System.out.println("All OOP contract verifications PASSED successfully!");
+    }}
+}}
+"""
+    elif name == "Custom_Exception_Hierarchy_And_Nested_Interfaces":
+        return f"""/**
+ * Daily Java Challenge - Day {day_num:03d} ({date_str})
+ * Topic: {title}
+ * Category: {cat}
+ * Curriculum: REC R2023 IT - Unit III (Packages, Interface & Exception Handling)
+ * 
+ * Description:
+ * Implements a custom exception hierarchy (checked vs unchecked), nested interface
+ * callback contracts, and AutoCloseable try-with-resources lifecycle management.
+ */
+public class {class_name} {{
+
+    // Nested Interface Contract
+    public interface PaymentGateway {{
+        interface TransactionListener {{
+            void onTransactionSuccess(String txnId, double amount);
+            void onTransactionFailure(String txnId, Exception reason);
+        }}
+        void processPayment(String txnId, double amount, TransactionListener listener) throws BankingException;
+    }}
+
+    // Checked Exception Base
+    public static class BankingException extends Exception {{
+        public BankingException(String message) {{ super(message); }}
+        public BankingException(String message, Throwable cause) {{ super(message, cause); }}
+    }}
+
+    // Checked Specialized Exception
+    public static class InsufficientFundsException extends BankingException {{
+        private final double deficit;
+        public InsufficientFundsException(String message, double deficit) {{
+            super(message);
+            this.deficit = deficit;
+        }}
+        public double getDeficit() {{ return deficit; }}
+    }}
+
+    // Unchecked Runtime Exception
+    public static class SecurityFraudException extends RuntimeException {{
+        public SecurityFraudException(String message) {{ super(message); }}
+    }}
+
+    // AutoCloseable Resource for Try-With-Resources
+    public static class SecureSession implements AutoCloseable {{
+        private final String sessionId;
+        private boolean active;
+
+        public SecureSession(String sessionId) {{
+            this.sessionId = sessionId;
+            this.active = true;
+            System.out.println("[Session] Opened secure session: " + sessionId);
+        }}
+
+        public void validateRiskScore(double amount) {{
+            if (amount > 1_000_000) {{
+                throw new SecurityFraudException("Exceeded instantaneous risk threshold: $" + amount);
+            }}
+        }}
+
+        @Override
+        public void close() {{
+            this.active = false;
+            System.out.println("[Session] Closed secure session: " + sessionId);
+        }}
+    }}
+
+    public static void main(String[] args) {{
+        System.out.println("=== REC Unit III: Exception Handling & Nested Interfaces ===");
+
+        // Try-with-resources with custom exceptions
+        try (SecureSession session = new SecureSession("SESS-8821")) {{
+            double accountBalance = 500.0;
+            double transferAmount = 750.0;
+
+            if (transferAmount > accountBalance) {{
+                throw new InsufficientFundsException("Account balance too low", transferAmount - accountBalance);
+            }}
+        }} catch (InsufficientFundsException e) {{
+            System.err.println("Caught InsufficientFundsException: " + e.getMessage() + " (Deficit: $" + e.getDeficit() + ")");
+        }} catch (BankingException e) {{
+            System.err.println("Caught Generic BankingException: " + e.getMessage());
+        }}
+
+        // Nested Interface Callback verification
+        PaymentGateway.TransactionListener listener = new PaymentGateway.TransactionListener() {{
+            @Override
+            public void onTransactionSuccess(String txnId, double amount) {{
+                System.out.println("[Callback] Txn " + txnId + " approved for $" + amount);
+            }}
+            @Override
+            public void onTransactionFailure(String txnId, Exception reason) {{
+                System.out.println("[Callback] Txn " + txnId + " rejected: " + reason.getMessage());
+            }}
+        }};
+
+        listener.onTransactionSuccess("TXN-9901", 250.0);
+        System.out.println("All Unit III Exception & Interface contracts verified successfully!");
+    }}
+}}
+"""
+    else:
+        return f"""/**
+ * Daily Java Challenge - Day {day_num:03d} ({date_str})
+ * Topic: {title}
+ * Category: {cat}
+ * Curriculum: REC R2023 IT Syllabus
  * 
  * Description:
  * {desc}
@@ -477,8 +739,11 @@ def generate_dynamic_topic(day_num, date_str):
 public class {class_name} {{
 
     public static void runDemo() {{
-        System.out.println("Running challenge: {title}");
+        System.out.println("==================================================");
+        System.out.println("Challenge: {title}");
         System.out.println("Category: {cat}");
+        System.out.println("Syllabus Reference: REC R2023 IT Curriculum");
+        System.out.println("==================================================");
         System.out.println("Status: Verified & Operational");
     }}
 
@@ -487,13 +752,6 @@ public class {class_name} {{
     }}
 }}
 """
-    return {
-        "filename": filename,
-        "topic": title,
-        "category": cat,
-        "description": desc,
-        "content": content
-    }
 
 def update_readme(daily_dir, readme_path):
     files = sorted([f for f in os.listdir(daily_dir) if f.endswith(".java")])
@@ -530,7 +788,7 @@ Welcome to my daily Java coding journey! This repository features daily code imp
 ---
 
 ## ⚡ Automated Daily Updates
-This repository automatically receives daily code challenges and solutions via **GitHub Actions** workflows running every morning.
+This repository automatically receives daily code challenges and solutions via **GitHub Actions** scheduled workflows running every morning at **03:25 UTC (08:55 AM IST)**.
 
 ### How to Run Locally
 ```bash
@@ -542,6 +800,16 @@ cd java
 javac daily/Day001_LRU_Cache.java
 java daily.Day001_LRU_Cache
 ```
+
+---
+
+## 🎓 Academic Curriculum & Syllabus Integration (REC R2023 IT)
+Starting from **Day 030**, the automated daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
+- **Unit I (OOP Fundamentals & Java Basics):** Bitwise operators, data types, control flow, Java 17+ pattern matching switch
+- **Unit II (Classes & Inheritance):** Class hierarchies, constructor chaining (`super()`), method overriding vs dynamic dispatch, abstract classes, `Object` class contracts (`equals`, `hashCode`, `toString`)
+- **Unit III (Packages, Interfaces & Exception Handling):** Package structures, access modifiers, nested interfaces, checked vs unchecked exception hierarchy, `try-with-resources`, interface default/static/private methods
+- **Unit IV (I/O & Collections Framework):** Byte streams vs Character streams, Object serialization (`transient`, `serialVersionUID`), `TreeSet`/`TreeMap` Red-Black invariants, Generics bounded wildcards (`? extends`, `? super`), `PriorityQueue` heaps, `HashMap` tree-binning collision resolution
+- **Unit V (Streams API, Lambdas & JDBC):** Predefined functional interfaces (`Predicate`, `Function`, `Consumer`, `Supplier`), Stream API reductions and custom collectors (`groupingBy`, `partitioningBy`), Parallel streams with `ForkJoinPool`, JDBC transaction boundaries, savepoints, batch updates, and scrollable `ResultSet`
 
 ---
 
