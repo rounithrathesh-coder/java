@@ -753,6 +753,14 @@ public class {class_name} {{
 }}
 """
 
+def get_human_commit_message(entry):
+    day_prefix = entry["filename"].split("_")[0] # e.g. Day030
+    topic = entry.get("topic", "")
+    # Clean topic title (strip REC Unit prefix and parenthetical notes)
+    clean_topic = re.sub(r"^REC\s+Unit\s+[I|V|X]+\s*-\s*", "", topic)
+    clean_topic = clean_topic.split("(")[0].strip()
+    return f"feat(daily): implement {day_prefix} - {clean_topic}"
+
 def update_readme(daily_dir, readme_path):
     files = sorted([f for f in os.listdir(daily_dir) if f.endswith(".java")])
     table_rows = []
@@ -777,18 +785,14 @@ def update_readme(daily_dir, readme_path):
 
     table_md = "\n".join(table_rows)
 
-    readme_content = f"""# ☕ Daily Java Practice & System Design
+    readme_content = f"""# ☕ 100 Days of Java: Algorithms, System Design & OOP
 
-[![Daily Java Code Push](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml/badge.svg)](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Java: 17+](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
 
 Welcome to my daily Java coding journey! This repository features daily code implementations, algorithm solutions, system design patterns, and multithreading exercises.
 
 ---
-
-## ⚡ Automated Daily Updates
-This repository automatically receives daily code challenges and solutions via **GitHub Actions** scheduled workflows running every morning at **03:25 UTC (08:55 AM IST)**.
 
 ### How to Run Locally
 ```bash
@@ -804,7 +808,7 @@ java daily.Day001_LRU_Cache
 ---
 
 ## 🎓 Academic Curriculum & Syllabus Integration (REC R2023 IT)
-Starting from **Day 030**, the automated daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
+Starting from **Day 030**, the daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
 - **Unit I (OOP Fundamentals & Java Basics):** Bitwise operators, data types, control flow, Java 17+ pattern matching switch
 - **Unit II (Classes & Inheritance):** Class hierarchies, constructor chaining (`super()`), method overriding vs dynamic dispatch, abstract classes, `Object` class contracts (`equals`, `hashCode`, `toString`)
 - **Unit III (Packages, Interfaces & Exception Handling):** Package structures, access modifiers, nested interfaces, checked vs unchecked exception hierarchy, `try-with-resources`, interface default/static/private methods
@@ -826,7 +830,6 @@ Starting from **Day 030**, the automated daily challenges systematically advance
 - `Loops/`: Loops, iterations, logic puzzles
 - `OOPS/`: Object-Oriented Programming (Classes, Inheritance, Polymorphism, Encapsulation)
 - `daily/`: Daily code challenges, advanced algorithms, and design patterns
-- `.github/workflows/`: CI/CD automation for scheduled daily code updates
 
 ---
 *Maintained by [@rounithrathesh-coder](https://github.com/rounithrathesh-coder)*
@@ -865,5 +868,5 @@ def main():
     update_readme(daily_dir, readme_path)
     print("README.md updated successfully.")
 
-if __name__ == "__main__":
-    main()
+    commit_msg = get_human_commit_message(next_entry)
+    print(f"COMMIT_MSG:{commit_msg}")

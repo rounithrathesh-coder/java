@@ -1,15 +1,11 @@
-# ☕ Daily Java Practice & System Design
+# ☕ 100 Days of Java: Algorithms, System Design & OOP
 
-[![Daily Java Code Push](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml/badge.svg)](https://github.com/rounithrathesh-coder/java/actions/workflows/daily_code.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Java: 17+](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
 
 Welcome to my daily Java coding journey! This repository features daily code implementations, algorithm solutions, system design patterns, and multithreading exercises.
 
 ---
-
-## ⚡ Automated Daily Updates
-This repository automatically receives daily code challenges and solutions via **GitHub Actions** scheduled workflows running every morning at **03:25 UTC (08:55 AM IST)**.
 
 ### How to Run Locally
 ```bash
@@ -25,7 +21,7 @@ java daily.Day001_LRU_Cache
 ---
 
 ## 🎓 Academic Curriculum & Syllabus Integration (REC R2023 IT)
-Starting from **Day 030**, the automated daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
+Starting from **Day 030**, the daily challenges systematically advance through the official **Rajalakshmi Engineering College (REC) R2023 IT Curriculum (Units I–V)**:
 - **Unit I (OOP Fundamentals & Java Basics):** Bitwise operators, data types, control flow, Java 17+ pattern matching switch
 - **Unit II (Classes & Inheritance):** Class hierarchies, constructor chaining (`super()`), method overriding vs dynamic dispatch, abstract classes, `Object` class contracts (`equals`, `hashCode`, `toString`)
 - **Unit III (Packages, Interfaces & Exception Handling):** Package structures, access modifiers, nested interfaces, checked vs unchecked exception hierarchy, `try-with-resources`, interface default/static/private methods
@@ -75,7 +71,6 @@ Starting from **Day 030**, the automated daily challenges systematically advance
 - `Loops/`: Loops, iterations, logic puzzles
 - `OOPS/`: Object-Oriented Programming (Classes, Inheritance, Polymorphism, Encapsulation)
 - `daily/`: Daily code challenges, advanced algorithms, and design patterns
-- `.github/workflows/`: CI/CD automation for scheduled daily code updates
 
 ---
 *Maintained by [@rounithrathesh-coder](https://github.com/rounithrathesh-coder)*
