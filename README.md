@@ -65,6 +65,7 @@ Starting from **Day 030**, the daily challenges systematically advance through t
 | [`Day029_Skip_List_Concurrent.java`](daily/Day029_Skip_List_Concurrent.java) | Data Structures - Concurrent SkipList Map with Probabilistic Balancing | 2026-11-19 | `Passing` |
 | [`Day030_Inheritance_Abstract_Classes_And_Object_Contract.java`](daily/Day030_Inheritance_Abstract_Classes_And_Object_Contract.java) | REC Unit II - Classes, Abstract Classes & Object Methods (equals/hashCode) | 2026-11-20 | `Passing` |
 | [`Day031_Custom_Exception_Hierarchy_And_Nested_Interfaces.java`](daily/Day031_Custom_Exception_Hierarchy_And_Nested_Interfaces.java) | REC Unit III - Exception Handling & Nested Interfaces | 2026-11-21 | `Passing` |
+| [`Day032_Byte_Streams_Vs_Character_Streams_IO.java`](daily/Day032_Byte_Streams_Vs_Character_Streams_IO.java) | REC Unit IV - Byte Streams vs Character Streams (Buffered I/O) | 2026-11-22 | `Passing` |
 
 ---
 
